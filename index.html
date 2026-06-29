@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>B&amp;R Imaging — Expert MRI &amp; CT Service, Support &amp; Training</title>
+<meta name="description" content="B&R Imaging (B&R Global LLC) — 25+ years of hands-on MRI &amp; CT diagnostic imaging support across Philips, Siemens, GE and Toshiba. Service, repairs, installs, and onsite training across the U.S. and Latin America." />
+<meta property="og:title" content="B&R Imaging — Expert MRI & CT Service, Support & Training" />
+<meta property="og:description" content="25+ years of multi-vendor MRI & CT support. Diagnostics, repairs, installs, PMs and bilingual onsite training." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.bandrimaging.com/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bg:#0b1220;
+    --bg-2:#0f1a2e;
+    --panel:#121f38;
+    --panel-2:#16243f;
+    --line:rgba(255,255,255,.08);
+    --text:#e8eef9;
+    --muted:#9fb0cc;
+    --accent:#22d3ee;
+    --accent-2:#3b82f6;
+    --accent-soft:rgba(34,211,238,.12);
+    --radius:16px;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    background:radial-gradient(1200px 600px at 75% -10%,rgba(59,130,246,.18),transparent 60%),
+               radial-gradient(900px 500px at 0% 0%,rgba(34,211,238,.10),transparent 55%),
+               var(--bg);
+    color:var(--text);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
+  .accent{color:var(--accent)}
+
+  header.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(10px);
+    background:rgba(11,18,32,.72);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.3px}
+  .brand .mark{display:grid;place-items:center;width:34px;height:34px;border-radius:9px;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#04121b;font-weight:800}
+  .brand small{display:block;font-weight:500;color:var(--muted);font-size:11px;letter-spacing:.5px;text-transform:uppercase}
+  .nav-links{display:flex;gap:26px;align-items:center;font-size:14px;color:var(--muted)}
+  .nav-links a:hover{color:var(--text)}
+  .nav-cta{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#04121b !important;
+    padding:9px 16px;border-radius:10px;font-weight:700}
+  @media(max-width:760px){.nav-links a:not(.nav-cta){display:none}}
+
+  .hero{padding:84px 0 64px}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--accent);
+    background:var(--accent-soft);border:1px solid rgba(34,211,238,.25);padding:6px 12px;border-radius:999px;font-weight:600}
+  .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(34,211,238,.2)}
+  h1{font-size:clamp(34px,5.4vw,58px);line-height:1.05;font-weight:800;letter-spacing:-.02em;margin:20px 0 18px}
+  .hero p.lead{font-size:clamp(17px,2.2vw,20px);color:var(--muted);max-width:680px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+  .btn{display:inline-flex;align-items:center;gap:9px;padding:13px 22px;border-radius:12px;font-weight:700;font-size:15px;transition:.15s}
+  .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#04121b}
+  .btn.primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(34,211,238,.25)}
+  .btn.ghost{border:1px solid var(--line);color:var(--text)}
+  .btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+  .stats{display:flex;flex-wrap:wrap;gap:36px;margin-top:46px}
+  .stat .n{font-size:30px;font-weight:800;background:linear-gradient(135deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat .l{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px}
+
+  section{padding:64px 0}
+  .sec-head{max-width:640px;margin-bottom:38px}
+  .sec-head .kicker{color:var(--accent);font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase}
+  .sec-head h2{font-size:clamp(26px,3.4vw,38px);font-weight:800;letter-spacing:-.02em;margin:10px 0 12px}
+  .sec-head p{color:var(--muted);font-size:17px}
+
+  .grid{display:grid;gap:20px}
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  @media(max-width:880px){.g3{grid-template-columns:1fr}.g2{grid-template-columns:1fr}}
+
+  .card{background:linear-gradient(180deg,var(--panel),var(--panel-2));border:1px solid var(--line);
+    border-radius:var(--radius);padding:26px;transition:.18s}
+  .card:hover{border-color:rgba(34,211,238,.4);transform:translateY(-3px)}
+  .card .ico{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;font-size:22px;
+    background:var(--accent-soft);border:1px solid rgba(34,211,238,.25);margin-bottom:16px}
+  .card h3{font-size:19px;font-weight:700;margin-bottom:8px}
+  .card p,.card li{color:var(--muted);font-size:15px}
+  .card ul{list-style:none;margin-top:10px;display:grid;gap:8px}
+  .card li{display:flex;gap:10px}
+  .card li::before{content:"";flex:0 0 7px;height:7px;margin-top:9px;border-radius:50%;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2))}
+
+  .systems{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .oem{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+  @media(max-width:760px){.oem{grid-template-columns:repeat(2,1fr)}}
+  .oem .o{text-align:center;padding:22px 10px;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+  .oem .o .name{font-weight:800;font-size:18px;letter-spacing:.5px}
+  .oem .o .sub{font-size:12.5px;color:var(--muted);margin-top:4px}
+
+  .contact-card{background:linear-gradient(135deg,rgba(34,211,238,.10),rgba(59,130,246,.08));
+    border:1px solid rgba(34,211,238,.3);border-radius:22px;padding:46px;text-align:center}
+  .contact-card h2{font-size:clamp(26px,3.6vw,38px);font-weight:800;letter-spacing:-.02em}
+  .contact-card p{color:var(--muted);max-width:560px;margin:14px auto 0;font-size:17px}
+  .contact-methods{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:28px}
+
+  footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:14px}
+  .foot-inner{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+  .badge{display:inline-flex;gap:8px;align-items:center;font-size:12.5px;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">
+      <span class="mark">B&amp;R</span>
+      <span>B&amp;R Imaging<small>B&amp;R Global LLC</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#systems">Systems</a>
+      <a href="#training">Training</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<a id="top"></a>
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span> Multi-vendor MRI &amp; CT specialists</span>
+    <h1>Expert MRI &amp; CT support,<br/><span class="accent">backed by 25+ years</span> in the field.</h1>
+    <p class="lead">B&amp;R Imaging provides hands-on diagnostic imaging service, repairs, installations and onsite training across Philips, Siemens, GE and Toshiba MRI &amp; CT platforms — in the U.S. and internationally.</p>
+    <div class="cta-row">
+      <a class="btn primary" href="#contact">Request support &rarr;</a>
+      <a class="btn ghost" href="#services">See what we do</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="n">25+</div><div class="l">Years in imaging</div></div>
+      <div class="stat"><div class="n">4</div><div class="l">Major OEM platforms</div></div>
+      <div class="stat"><div class="n">2</div><div class="l">Continents served</div></div>
+      <div class="stat"><div class="n">ES / EN</div><div class="l">Bilingual support</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">What we do</div>
+      <h2>Full-service MRI &amp; CT support</h2>
+      <p>From a single troubleshooting call to a full install or deinstall — multi-vendor expertise across the major OEMs, with rapid response when you can't afford downtime.</p>
+    </div>
+    <div class="grid g3">
+      <div class="card">
+        <div class="ico">🛠️</div>
+        <h3>Service &amp; Repair</h3>
+        <p>Get systems back online fast and keep them reliable.</p>
+        <ul>
+          <li>Diagnostics, troubleshooting &amp; repairs</li>
+          <li>Performance audits</li>
+          <li>Preventive maintenance (PMs)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="ico">📦</div>
+        <h3>Installs &amp; Projects</h3>
+        <p>Bring systems in, move them, or take them out — done right.</p>
+        <ul>
+          <li>Installations &amp; upgrades</li>
+          <li>Deinstallations &amp; relocations</li>
+          <li>Multi-vendor program support</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="ico">⚡</div>
+        <h3>Rapid Response</h3>
+        <p>On-site where you need it, when you need it.</p>
+        <ul>
+          <li>U.S. &amp; international travel available</li>
+          <li>Senior multi-vendor technical support</li>
+          <li>Extended OEM network for the unusual cases</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="systems" class="systems">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kicker">Coverage</div>
+      <h2>Supported systems</h2>
+      <p>Background includes roles with top OEMs and national multi-vendor programs — most recently as Senior Multi-Vendor Technical Support focused on Philips MRI and CT.</p>
+    </div>
+    <div class="oem">
+      <div class="o"><div class="name">Philips</div><div class="sub">Achieva · Ingenia · Brilliance · Ingenuity</div></div>
+      <div class="o"><div class="name">Siemens</div><div class="sub">MRI &amp; CT platforms</div></div>
+      <div class="o"><div class="name">GE</div><div class="sub">MRI &amp; CT platforms</div></div>
+      <div class="o"><div class="name">Toshiba</div><div class="sub">Available upon request</div></div>
+    </div>
+    <p style="margin-top:26px;color:var(--muted)">Have something unique? Let's talk — chances are I've worked on it, or can support it through my extended network.</p>
+  </div>
+</section>
+
+<section id="training">
+  <div class="wrap">
+    <div class="grid g2" style="align-items:center">
+      <div>
+        <div class="sec-head" style="margin-bottom:18px">
+          <div class="kicker">Onsite training</div>
+          <h2>Hands-on training for your team — U.S. &amp; Latin America</h2>
+          <p>Build your team's confidence on Philips MRI (Achieva, Ingenia) and CT (Brilliance, Ingenuity) without sending people away for weeks.</p>
+        </div>
+      </div>
+      <div class="card">
+        <ul>
+          <li>Hands-on training for Philips MRI &amp; CT systems</li>
+          <li>Delivered onsite at your facility</li>
+          <li>Minimize downtime — no extended offsite trips</li>
+          <li>Flexible for all skill levels</li>
+          <li>Bilingual support (English / Spanish)</li>
+          <li>Open to travel across the U.S., Latin America &amp; beyond</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-card">
+      <h2>Let's get your systems running.</h2>
+      <p>Tell me what you're working with and what you need — service, an install, or training. I'll get back to you quickly.</p>
+      <div class="contact-methods">
+        <a class="btn primary" href="mailto:sethturnbo@gmail.com">✉️ sethturnbo@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-inner">
+    <div>© <span id="yr"></span> B&amp;R Global LLC · B&amp;R Imaging</div>
+    <div class="badge">Multi-vendor MRI &amp; CT service · support · training</div>
+  </div>
+</footer>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
