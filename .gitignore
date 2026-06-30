@@ -1,4 +1,2 @@
-*.png
-final.png
-redesign.png
-preview.png
+# ignore working/preview render screenshots in the repo root only (keep img/*.png)
+/*.png
