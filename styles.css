@@ -32,7 +32,9 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0
 .brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:18px;color:var(--text)}
 .brand:hover{text-decoration:none}
 .brand .dot{width:12px;height:12px;border-radius:50%;background:var(--blue);display:inline-block}
-.brand .logo{height:40px;width:104px;object-fit:cover;object-position:center;border-radius:8px;display:block;filter:brightness(1.45) contrast(1.08) saturate(1.15);border:1px solid rgba(96,165,250,.28);background:#0c1830}
+.brand .logo-mark{display:inline-flex;flex-direction:column;align-items:center;line-height:1.05;font-family:Georgia,"Times New Roman",serif}
+.brand .logo-br{font-size:25px;font-weight:600;letter-spacing:1px;color:var(--blue-2);padding-bottom:4px;border-bottom:1.6px solid var(--blue-2)}
+.brand .logo-sub{font-size:8px;font-weight:700;letter-spacing:3.5px;color:var(--blue-2);margin-top:3px}
 nav .links a{color:var(--muted);margin-left:22px;font-size:15px}
 nav .links a:hover{color:var(--text);text-decoration:none}
 @media(max-width:640px){nav .links a{margin-left:14px;font-size:14px}}
