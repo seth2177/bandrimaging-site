@@ -32,7 +32,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0
 .brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:18px;color:var(--text)}
 .brand:hover{text-decoration:none}
 .brand .dot{width:12px;height:12px;border-radius:50%;background:var(--blue);display:inline-block}
-.brand .logo{height:38px;width:96px;object-fit:cover;object-position:center;border-radius:6px;display:block}
+.brand .logo{height:40px;width:104px;object-fit:cover;object-position:center;border-radius:8px;display:block;filter:brightness(1.45) contrast(1.08) saturate(1.15);border:1px solid rgba(96,165,250,.28);background:#0c1830}
 nav .links a{color:var(--muted);margin-left:22px;font-size:15px}
 nav .links a:hover{color:var(--text);text-decoration:none}
 @media(max-width:640px){nav .links a{margin-left:14px;font-size:14px}}
@@ -92,10 +92,10 @@ nav .links a:hover{color:var(--text);text-decoration:none}
 @media(max-width:640px){.stats{grid-template-columns:repeat(2,1fr);gap:24px}}
 
 /* Showcase */
-.showcase{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.showcase{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
 .showcase figure{margin:0;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:.15s}
 .showcase figure:hover{border-color:rgba(59,130,246,.45);transform:translateY(-3px)}
-.showcase img{width:100%;height:280px;object-fit:cover;display:block}
+.showcase img{width:100%;height:230px;object-fit:cover;display:block}
 .showcase figcaption{padding:14px 18px;color:var(--muted);font-size:14px}
 @media(max-width:760px){.showcase{grid-template-columns:1fr}.showcase img{height:230px}}
 
