@@ -32,6 +32,7 @@ nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0
 .brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:18px;color:var(--text)}
 .brand:hover{text-decoration:none}
 .brand .dot{width:12px;height:12px;border-radius:50%;background:var(--blue);display:inline-block}
+.brand .logo{height:38px;width:96px;object-fit:cover;object-position:center;border-radius:6px;display:block}
 nav .links a{color:var(--muted);margin-left:22px;font-size:15px}
 nav .links a:hover{color:var(--text);text-decoration:none}
 @media(max-width:640px){nav .links a{margin-left:14px;font-size:14px}}
